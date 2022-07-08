@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const BoxIcon = ({ name }) => {
     return (
         <>
@@ -17,9 +19,13 @@ const BoxIcon = ({ name }) => {
                     `
                 }
             </style>
-            <li><a href="/">
-                <i className={`bx ${name} bx-sm`} ></i>
-            </a></li>
+            <li>
+                <Link  href="/">
+                    <a>
+                        <i className={`bx ${name} bx-sm`} ></i>
+                    </a>
+                </Link>
+            </li>
         </>
     );
 }

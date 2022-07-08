@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import BoxIcon from "./boxIcon";
 import Logo from "./logo";
 
@@ -102,23 +103,23 @@ const Footer = () => {
                     <ul className="contact-container">
                         <li className="phone contact">
                             <Image src="/images/icon-phone.svg" alt="phone-icon" width='18' height='18' layout="intrinsic" />
-                            <p className="contact-txt">Phone: <a href="/">+1-543-123-4567</a></p>
+                            <p className="contact-txt">Phone: <Link href="/"><a>+1-543-123-4567</a></Link></p>
                         </li>
                         <li className="email contact">
                             <Image src="/images/icon-email.svg" alt="email-icon" width='22' height='18' layout="intrinsic" />
-                            <a className="contact-txt" href="/">example@fylo.com</a>
+                            <Link className="contact-txt" href="/"><a>example@fylo.com</a></Link>
                         </li>
                     </ul>
                     <ul role={'list'} className="aboutUs-container">
-                        <li><a href="/">About Us</a></li>
-                        <li><a href="/">jobs</a></li>
-                        <li><a href="/">Press</a></li>
-                        <li><a href="/">Blog</a></li>
+                        <li><Link href="/"><a>About Us</a></Link></li>
+                        <li><Link href="/"><a>jobs</a></Link></li>
+                        <li><Link href="/"><a>Press</a></Link></li>
+                        <li><Link href="/"><a>Blog</a></Link></li>
                     </ul>
                     <ul className="terms-container">
-                        <li><a href="/">Contact Us</a></li>
-                        <li><a href="/">Terms</a></li>
-                        <li><a href="/">Privacy</a></li>
+                        <li><Link href="/"><a>Contact Us</a></Link></li>
+                        <li><Link href="/"><a>Terms</a></Link></li>
+                        <li><Link href="/"><a>Privacy</a></Link></li>
                     </ul>
                     <ul className="socials">
                         <BoxIcon name={'bxl-facebook'} />
@@ -127,8 +128,8 @@ const Footer = () => {
                     </ul>
                 </nav>
                 <p className="attribution">
-                    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-                    Coded by <a href="https://www.frontendmentor.io/profile/sinredneran">Narender Singh</a>.
+                    Challenge by <Link href="https://www.frontendmentor.io?ref=challenge" target="_blank"><a>Frontend Mentor</a></Link>.
+                    Coded by <Link href="https://www.frontendmentor.io/profile/sinredneran"><a>Narender Singh</a></Link>.
                 </p>
             </footer>
         </>

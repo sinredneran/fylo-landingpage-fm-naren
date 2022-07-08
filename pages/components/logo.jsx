@@ -1,10 +1,11 @@
+import Link from 'next/link';
 import Icon from './svgComp';
-const Logo = ({fillDiff}) => {
+const Logo = ({ fillDiff }) => {
     return (
         <>
-        <style jsx>
-            {
-                `   
+            <style jsx>
+                {
+                    `   
                 .logo-container{
                     position: relative;
                     width: 166px;
@@ -17,11 +18,13 @@ const Logo = ({fillDiff}) => {
                     }
                 }
                 `
-            }
-        </style>
-            <a className='logo-container' href="/">
-                <Icon fillDiff={fillDiff}/>
-            </a>
+                }
+            </style>
+            <Link href='/'>
+                <a className='logo-container' href="/">
+                    <Icon fillDiff={fillDiff} />
+                </a>
+            </Link>
         </>
     );
 }

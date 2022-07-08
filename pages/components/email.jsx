@@ -1,7 +1,9 @@
-import { useState } from "react";
+import { useState, useId } from "react";
 
 const Email = ({ direction, buttonTxt, placeholderTxt }) => {
     const [err, setErr] = useState(false);
+    const emailId = useId();
+
     let isColumn = false;
     if (direction === 'column') {
         isColumn = true;
@@ -91,7 +93,7 @@ const Email = ({ direction, buttonTxt, placeholderTxt }) => {
                 }
             </style>
             <form className="CTA-container" onSubmit={handleEmail} >
-                <input className="inputStyle" type="email" name="email" id="email" placeholder={placeholderTxt} onChange={handleEmailInput} />
+                <input className="inputStyle" type="email" name="email" id={`email-${emailId}`} placeholder={placeholderTxt} onChange={handleEmailInput} />
                 <button className="buttonStyle" type="submit" >{buttonTxt}</button>
                 {err && <span className="err">Please check your email</span>}
             </form>

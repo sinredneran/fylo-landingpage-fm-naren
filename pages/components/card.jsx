@@ -62,12 +62,12 @@ const Card = () => {
             </style>
             <div className="card-container">
                 <div className="quote-container">
-                    <Image src='/images/icon-quotes.svg' layout="fill" />
+                    <Image src='/images/icon-quotes.svg' layout="fill" alt="quote-icon" />
                 </div>
                 <p>Fylo has improved our team productivity by an order of magnitude. Since making the switch our team has become a well-oiled collaboration machine.</p>
                 <div className="man-container">
                     <div className="avatar-container">
-                        <Image src='/images/avatar-testimonial.jpg' layout="fill" objectFit="cover" />
+                        <Image src='/images/avatar-testimonial.jpg' layout="fill" objectFit="cover" alt="kyle burton" />
                     </div>
                     <div className="man-txts">
                         <p className="name">Kyle Burton</p>

@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 const LinkComp = () => {
     return (
         <>
@@ -12,7 +13,7 @@ const LinkComp = () => {
                         margin-top:1rem;
                     }
                     .container a{
-                        color: hsl(170, 45%, 43%);
+                        color: hsl(170, 45%, 20%);
                     }
                     .container a:hover, .container a:focus{
                         color: hsl(170, 45%, 50%);
@@ -32,7 +33,7 @@ const LinkComp = () => {
                 }
             </style>
             <div className="container">
-                <a href="/">See how Fylo works</a>
+                <Link href="/"><a>See how Fylo works</a></Link>
                 <div className="image-wrapper">
                     <Image src={'/images/icon-arrow.svg'} alt='arrow-icon' layout="fill" />
                 </div>

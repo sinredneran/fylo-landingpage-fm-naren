@@ -1,4 +1,5 @@
 import Logo from './logo';
+import Link from 'next/link';
 
 const Nav = () => {
     return (
@@ -49,9 +50,9 @@ const Nav = () => {
             </style>
             <Logo fillDiff={false} />
             <ul role={'list'}>
-                <li><a href="/">Features</a></li>
-                <li><a href="/">Team</a></li>
-                <li><a href="/">Sign In</a></li>
+                <li><Link href="/"><a>Features</a></Link></li>
+                <li><Link href="/"><a>Team</a></Link></li>
+                <li><Link href="/"><a>Sign In</a></Link></li>
             </ul>
         </nav>
     );
